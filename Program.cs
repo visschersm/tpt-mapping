@@ -1,12 +1,17 @@
 ﻿using System;
+using MTech.TPTMapping;
 
-namespace tpt_mapping
+namespace MTech.TPTMapping
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using var context = new AnimalContext();
+            context.Cows.Add(new Cow 
+            {
+
+            });
         }
     }
 }
